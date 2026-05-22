@@ -38,7 +38,7 @@ do
 			local CameraPosition = CameraCFrame.Position;
 	
 			local Delta = ( AdorneePosition - CameraPosition );
-			local Scale = .07;
+			local Scale = .05;
 
 			Part.CFrame = CFrameNew( CameraPosition + ( Delta.Unit * ( ( Delta.Magnitude * Scale ) - self.ZIndex ) ) ) * ( AdorneeCFrame - AdorneePosition );
 			Part.Size = self.Size * Scale;
